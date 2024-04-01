@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="main">
+        <section class="scroll-up d-flex justify-content-center align-items-center d-none" id="scroll-up">
+            <a href="#home" class="m-0 p-0">
+              <img src="./images/arroq.svg" alt="" class="img-fluid">
+            </a>
+        </section>
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm" id="navbar" data-aos="fade-down" data-aos-delay="300">
+            <div class="container">
+              <a class="navbar-brand" href="#home">
+                <div class="d-flex justify-content-center align-items-center gap-2">
+                  <img src="./images/logo.png" alt="" class="" style="width: 150px;">
+                </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-lg-flex justify-content-lg-end align-items-lg-center">
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="https://bliss-stock.co.jp/my/">About Home Page</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="https://bliss-stock.co.jp/my/about-us/">Company Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="https://bliss-stock.co.jp/my/services/">Services and Business</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="https://bliss-stock.co.jp/my/employee-education/">Employee Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="https://bliss-stock.co.jp/my/internship/">Internship Program</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="https://bliss-stock.co.jp/my/employment_information/">Jobs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-primary" href="https://bliss-stock.co.jp/my/contact-us/">To Investigate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <section class="home" id="home">
+            <img src="./images/Group 176.png" alt="" class="w-100">
+        </section>
+        <section class="ads d-none d-lg-block" style="background-color: #DC5F00;">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-start">
+                    <div class="py-5 text-center text-white">
+                        <h2 class="mb-3">“မပျက်မကွက် တက်ရောက်သင့်တဲ့ Butterfly OJT Program”</h2>
+                        <h5 class="fw-normal m-0 p-0">ကိုယ်ပိုင်ဆုံးဖြတ်ချက်ဖြင့်ပရော်ဖက်ရှင်နယ်တစ်ယောက် အလုပ်လုပ်နိုင်မှာဖြစ်လို့ 3လအတွင်း</h5>
+                        <h5 class="fw-normal m-0 p-0 mb-4">အလုပ်လုပ်ရခြင်းရဲ့ ပျော်ရွှင်မှု"အရသာကို သင်ကိုယ်တိုင် ခံစားရစေမှာပါ။</h5>
+                        <span class="bg-white text-dark rounded-pill px-3 py-2">Get Start Now!</span>
+                    </div>
+                    <div class="img-container">
+                        <img src="./images/ma nanda one 1.png" alt="" class="" style="width: 270px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about py-3">
+            <div class="container py-5">
+                <article class="part-one py-3">
+                    <div class="d-flex justify-content-center align-items-start gap-3 flex-wrap">
+                        <img src="./images/one.png" alt="" class="" style="width: 250px;">
+                        <div class="" style="max-width: 600px;">
+                            <div class="d-flex justify-content-start align-items-center gap-2 mb-2">
+                                <img src="./images/butterfly.png" alt="" class="" style="width: 35px;">
+                                <p class="text-primary p-0 m-0 fw-bold" style="font-size: 25px;">Butterfly Program  <span class="text-dark fw-normal" style="font-size: 14px;"> ဆိုတာဘာလဲ?</span></p>
+                            </div>
+                            <p class="py-3 px-4 rounded-3 shadow" style="background-color: #F5E6E6;">
+                                Butterfly Program ဆိုတာကဘာလဲဆိုတာ စတင်မိတ်ဆက်ပေးပါမယ်။
+ဂျပန်အိုင်တီကုမ္ပဏီကို မဝင်ရောက်ခင် IT Company Job Readyness ဖြစ်အောင်လေ့ကျင့်ပေးတဲ့ ပရိုဂရမ်တစ်ခုပါ။ဂျပန်နိုင်ငံရှိ Bliss Stock IT company မှ Software Engineer career ဖြင့်ဂျပန်နိုင်ငံတွင်လာရောက်အလုပ်လုပ်ကိုင်လိုတဲ့မြန်မာလူငယ်များအတွက် လုပ်ငန်းခွင်မဝင်ခင်မှာ Job readiness လုပ်ငန်းခွင်ဝင်ရောက်ရန်အသင့်အနေအထားဖြစ်အောင် လေ့ကျင့်သင်ကြားပေးမယ့်programဖြစ်ပါတယ်။
+Programပထမအသုတ်အတွက် သင်တန်းသားဦးရေကတော့ ၁၀ဦးသာလက်ခံမှာဖြစ်ပါတယ်။
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="part-two py-3">
+                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap flex-row-reverse">
+                        <img src="./images/two.png" alt="" class="" style="width: 250px;">
+                        <div class="" style="max-width: 600px;">
+                            <div class="d-flex justify-content-start align-items-start gap-2 mb-2">
+                                <img src="./images/butterfly.png" alt="" class="" style="width: 35px;">
+                                <p class="text-primary p-0 m-0 fw-bold" style="font-size: 25px;">Butterfly Program  <span class="text-dark fw-normal" style="font-size: 14px;"> မှာဘာတွေလုပ်ရမှာလဲ?</span></p>
+                            </div>
+                            <p class="py-3 px-4 rounded-3 shadow" style="background-color: #F5E6E6;">
+                                လုပ်ငန်းခွင်စဝင်ပြီဆိုတာနဲ့ must know သိကိုသိထားရမယ့်အချက်တွေရှိပါတယ်။
+ကျောင်းမဟုတ်တော့တဲ့အတွက် အလုပ်ရှင်ဘက်ကနေ အလုပ်တခုချင်းစီကိုလိုက်သင်ပြပေးနေဖို့အချိန်မရှိသလို သင်ပြပေးမှာလည်းမဟုတ်တဲ့အတွက် ကိုယ့်ဘက်ကနေ ကြိုတင်လေ့လာထားဖို့လိုအပ်ပါတယ်။ ဥပမာအနေနဲ့ ရုံးတွင်းသုံး software များ tools များ၏အသုံးပြုပုံများ၊ Projectတခုဝင်လိုက်ပြီဆိုတာနဲ့ ပြင်ဆင်ရမည့်စာရွက်စာတမ်းများ၊ မိမိတစ်ဦးတည်းလုပ်နိုင်ရုံဖြင့်မလုံလောက်သဖြင့်အခြားသောအဖွဲ့ဝင်များနှင့်အတူပူးပေါင်းဆောင်ရွက်တတ်စေရန် စသည့်အကြောင်းအရာများကိုသင်ကြားပေးမှာဖြစ်ပါတယ်။</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="part-three py-3">
+                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                        <img src="./images/three.png" alt="" class="" style="width: 250px;">
+                        <div class="" style="max-width: 600px;">
+                            <div class="d-flex justify-content-start align-items-start gap-2 mb-2">
+                                <img src="./images/butterfly.png" alt="" class="" style="width: 35px;">
+                                <p class="text-primary p-0 m-0 fw-bold" style="font-size: 25px;">Butterfly Program  <span class="text-dark fw-normal" style="font-size: 14px;"> ကဘယ်လောက်ကြာမြင့်မှာလဲဲ? ကန့်သတ်ချက်တွေက ဘာတွေလဲ?</span></p>
+                            </div>
+                            <p class="py-3 px-4 rounded-3 shadow" style="background-color: #F5E6E6;">
+                                Butterfly program ကကြာချိန်အားဖြင့်သုံးလကြာမှာဖြစ်ပြီး
+လျှောက်ထားသူတွေက language တစ်ခုခုနဲ့ project ရေးသားဖူးသူ၊ တစ်နည်းအားဖြင့် software development အခြေခံရှိသူဖြစ်ရပါမယ်။ ပြီးတော့ ဂျပန်ကုမ္ပဏီအလုပ်လုပ်ရမှာဖြစ်ပြီး Japan လူမျိုးတွေနဲ့ပြောဆိုဆက်ဆံရမှာဖြစ်တဲ့အတွက်
+Japanစာအဆင့် အနည်းဆုံး N4 အောင်မြင်ထားသူလည်းဖြစ်ရပါမယ်ခင်ဗျာ။
+program ရဲ့အဓိကရည်ရွယ်ချက်က ဂျပန်IT company တွေမှာအလုပ်လုပ်တတ်အောင်သင်ပေးတာဖြစ်တဲ့အတွက် နာခံမှုအပြည့်နဲ့
+လေ့လာသင်ယူလိုစိတ်ရှိရပါမယ်ခင်ဗျ။</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="manner">
+            <div class="container py-5">
+                <h4 class="text-center mb-4">သင့် အနာဂါတ်အတွက် ပြီးပြည့်စုံသော <span class="text-primary">Butterfly OJT</span> သင်တန်း</h4>
+                <div class="grid d-flex justify-content-center align-items-start gap-3 flex-wrap">
+                    <article class="shadow">
+                        <h6 class="bg-primary text-white py-3 text-center">လူဘောင်အဖွဲ့အစည်းအတွင်း
+                            အလုပ်လုပ်တက်စေခြင်း</h6>
+                        <div class="px-2">
+                            <img src="./images/manner one.png" alt="" class="img-fluid"><br>
+                            <div class="py-3">
+                                <h1 class="d-inline text-primary">1.</h1>
+                                <span class="">ဘီးဇီးနစ်မန်နာ သင်ကြားခြင်းတွင် အစည်းအဝေးများနှင့် အင်တာဗျူးများ ကဲ့သို့သော ချိန်းဆိုမှုများတွင် အခြားသူများ၏ အချိန်ကိုလေးစားဖို့၊ အချိန်မှန်ရောက်ရှိစေရန်။ အချင်းချင်း ယဉ်ကျေးစွာ နှုတ်ဆက်တက်စေရန်။အခြားသူများ၏ ထင်မြင်ယူဆချက်များကို လေးစားပြီး ယဉ်ကျေးသောဘာသာစကားကို အသုံးပြုရန်။ လျှို့ဝှက်အချက်အလက်များနှင့် လျှို့ဝှက်အကြောင်းအရာများ ကိုလျှို့ဝှက်စွာထားတက်စေရန် အခြားသူများ၏ ကိုယ်ရေးကိုယ်တာကိစ္စများတွင် ပါဝင်ခြင်းမှ ရှောင်ကြဉ်ရန်။ အဖွဲ့လိုက်လုပ်ဆောင်ခြင်း၊ တင်ပြခြင်းနှင့် ဆွေးနွေးပြောဆိုခြင်း စွမ်းရည်များကို တိုးတက်စေရန် လေ့ကျင့်ပေးခြင်း။ </span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shadow">
+                        <h6 class="bg-primary text-white py-3 text-center">အိုင်တီပညာရပ်ပိုင်းဆိုင်ရာအသိဉာဏ်တိုးပွားစေခြင်း။</h6>
+                        <div class="px-2">
+                            <img src="./images/manner two.png" alt="" class="img-fluid"><br>
+                            <div class="py-3">
+                                <h1 class="d-inline text-primary">2.</h1>
+                            <span class="">လက်တွေ့ ပရောဂျက်များတွင် ပါဝင်ခြင်းဖြင့်၊ လက်တွေ့ ပြဿနာဖြေရှင်းခြင်းနှင့် အမှန်တကယ်Software Developmentဖွံ့ဖြိုးတိုးတက်မှုဆိုင်ရာ အတွေ့အကြုံများကို သင်ရရှိနိုင်ပါသည်။ အဖွဲ့လိုက်လုပ်ဆောင်ခြင်းနှင့် Customerများနှင့် ဆက်သွယ်ခြင်းမှတစ်ဆင့် သင်၏လက်တွေ့စွမ်းရည ်များကို မြှင့်တင်နိုင်သည်။ အိုင်တီလုပ်ငန်းသည် အဆက်မပြတ်တိုးတက်နေသဖြင့်၊ နောက်ဆုံးပေါ်နည်းပညာများနှင့် ခေတ်ရေစီးကြောင်း များကို ခြေရာခံနိုင်ပြီး ကျွန်ုပ်တို့၏ Butterfly OJT ပရိုဂရမ်တွင် ပါဝင်ခြင်းဖြင့် လက်ရှိစွမ်းရည် ကိုယ်ပိုင်စွမ်းရည်ကို မြှင့်တင်နိုင်ပါသည်။</span>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="d-md-flex justify-content-md-center align-items-md-start flex-md-wrap gap-3 d-lg-block">
+                        <article class="shadow mb-3">
+                            <h6 class="bg-primary text-white py-3 text-center">ဝန်ထမ်းသစ်လေ့ကျင့်ရေးဗီဒီယိုများမှ သင်ယူလေ့လာနိုင်ခြင်း။</h6>
+                            <div class="px-2 pb-3">
+                                <h1 class="d-inline text-primary">3.</h1>
+                                <span class="">ယခင် Butterfly OJT Program အချိန်၌တိုက်ရိုက်သင်ကြားခဲ့သော၊ သင်ခန်းစာများမှ အမျိုးအစားအလိုက် အချိန်မရွေး ပြန်လှယ်လေ့လာနိုင်မည်။ အပတ်စဉ် Butterfly OJT Program များတွင် တော့သက်ဆိုင်ရာ ပရောဂျတ်များအလိုက် ကွဲပြားသည်များကိုတော့ Senior Member များမှ ထပ်ဆောင်းရှင်းလင်းပြသပါမည်။</span>
+                            </div>
+                        </article>
+                        <article class="shadow">
+                            <h6 class="bg-primary text-white py-3 text-center">မိမိစွမ်းရည်ကိုအကဲဖြတ်နိုင်ခြင်း</h6>
+                            <div class="px-2 pb-3">
+                                <h1 class="d-inline text-primary">4.</h1>
+                                <span class="">Butterfly OJT Program တွင်ပါဝင်သူများ၏ စွမ်းဆောင်ရည်ကို ပုံမှန်အကဲဖြတ်ပြီး ကျွန်ုပ်တို့၏ ကုမ္ပဏီအတွက် သင့်လျော်ပါက ၎င်းတို့အားလုပ်ငန်းဆောင်ရွက်မှုစွမ်းရည်၊ နည်းပညာဆိုင်ရာ ကျွမ်းကျင်မှု၊ ဆက်သွယ်ရေးစွမ်းရည်၊ ပြဿနာဖြေရှင်းနိုင်မှု၊ အလုပ်နှင့်ပတ်သတ်‌သော အကြောင်းကြားနိုင်မှု၊ အရည်အသွေးစသည်တို့အပေါ် အခြေခံအကဲဖြတ်ပါသည်။ </span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="intro-video">
+            <div class="container py-5 px-2 text-center">
+                <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                    <img src="./images/butterfly.png" alt="" class="" style="width: 35px;">
+                    <p class="text-primary p-0 m-0 fw-bold" style="font-size: 25px;">Butterfly Program  <span class="text-dark fw-normal" style="font-size: 14px;"> ဆိုတာဘာလဲ?</span></p>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fG-fM0kRLZk?si=4HGusj6K-KrCZFrJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="table-1">
+            <div class="container py-5" style="overflow-x: scroll;overflow-y: hidden;">
+                <h4 class="text-center text-primary mb-3">\  နှိုင်းယှဉ်ချက်  /</h4>
+                <table class="text-center bg-white">
+                    <thead class="text-white">
+                      <th class="bg-info"></th>
+                      <th class="bg-info">မိမိကိုယ်တိုင်</th>
+                      <th class="bg-info">အခြားကုမ္ပဏီ</th>
+                      <th class="bg-primary"> Bliss Stockကုမ္ပဏီ</th>
+                    </thead>
+                    <tr>
+                      <td>Skill up</td>
+                      <td><img src="./images/t2.svg" alt="" class=""><br>ဘာကိုလေ့လာရမည်ကို ကိုယ်ပိုင်ဆုံးဖြတ်ရခြင်း </td>
+                      <td><img src="./images/t2.svg" alt="" class=""><br>အစိတ်အပိုင်းတစ်ခုကိုသာလေ့လာခွင့်ရခြင်း </td>
+                      <td><img src="./images/t3.svg" alt="" class=""><br>အိုင်တီအင်ဂျင်နီယာတစ်ယောက်သိသင့်သည်
+                        များကိုသင်ကြားခွင့်ရခြင်း </td>
+                    </tr>
+                    <tr>
+                      <td>OJTပြင်ပပံ့ပိုးမှုများ </td>
+                      <td><img src="./images/t1.svg" alt="" class=""><br>မရှိပါ</td>
+                      <td><img src="./images/t1.svg" alt="" class=""><br>မရှိပါ</td>
+                      <td><img src="./images/t3.svg" alt="" class=""><br>ဂျပန်လာဖို့ လမ်းညွှန်ချက်များ၊ သက်မွေး
+                        လမ်းကြောင်းဆိုင်ရာဆွေးနွေးပေးခြင်း 。</td>
+                    </tr>
+                    <tr>
+                      <td>ကုန်ကျစားရိတ်</td>
+                      <td><img src="./images/t2.svg" alt="" class=""><br>မိမိစားရိတ်ဖြင့် လေ့လာရခြင်း </td>
+                      <td><img src="./images/t2.svg" alt="" class=""><br>အခမဲ့ သင်ကြားပေးတဲ့ ကုမ္ပဏီ များရှိနိုင်ပေမယ့် 
+                        သင်ကြားနိုင်မည့် အကြောင်းအရာများမှာ 
+                        အကန့်သတ်ရှိခြင်း</td>
+                      <td><img src="./images/t3.svg" alt="" class=""><br>အခမဲ့</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="group-member p-5">
+            <div class="container">
+                <article class="text-center py-5 px-2" style="z-index: 1;">
+                    <h2 class="text-primary mb-4">\ ဝမ်းမြောက်စွာဂုဏ်ယူပါသည် /</h2>
+                    <p class="">Butterfly OJT Program မှတဆင့်</p>
+                    <h1 class="text-primary">1,031</h1>
+                    <p class="fw-bold">အိုင်တီပညာရှင်များကိုမွေးထုတ်ပေးနိုင်ခဲ့ပါပြီ</p>
+                    <p>ကျွန်ုပ်တို့ ကုမ္ပဏီက ဝန်ထမ်းသစ်လေ့ကျင့်ရေးကို 2019/04/05 ကတည်းကစတင်ခဲ့ပါတယ်။</p>
+                </article>
+            </div>
+        </section>
+        <section class="table mb-0">
+            <div class="container py-5 px-2">
+                <div class="d-flex justify-content-center align-items-start gap-5 flex-wrap">
+                    <article class="left">
+                        <div class="table-container d-flex justify-content-center align-items-center mb-4">
+                            <div class="divider"></div>
+                            <div class="title px-4">
+                                <h6 class="text-center">မိမိရဲ့ သက်မွေးလမ်းကြောင်းကို</h6>
+                                <h6 class="">တဖြေးဖြေးမြှင့်တင်ဖို့ လမ်းကြောင်းရှိပါတယ်</h6>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+                        <div class="d-flex gap-3 justify-content-center">
+                            <div class="content text-white">
+                                <div class="item py-4 px-2">
+                                    <h6 class="text-center fw-normal">Butterfly OJT ပရိုဂရမ်တွင် ပါဝင်ပြီး ဂျပန်နိုင်ငံITကုမ္ပဏီ တွင် အလုပ်လုပ်နိုင်စေရန်SEဆိုင်ရာလုပ်ငန်း ကျွမ်းကျင်မှုများကို ရယူခြင်း။
+                                        (ခန့်မှန်းကြာချိန် ၃လ)</h6>
+                                </div>
+                                <div class="item py-4 px-2">
+                                    <h6 class="text-center fw-normal">OJT ကာလအတွင်း ပေးအပ်ထားသော အလုပ်ရဲ့ စွမ်းဆောင်ရည်အပေါ် အခြေခံ၍ ရွေးချယ်ခံရပါက၊ ကျွန်ုပ်တို့၏ ကုမ္ပဏီတွင် ဝန်ထမ်းအဖြစ် အလုပ်ခန့်ရန် အခွင့်အလမ်း ရှိခြင်း။
+                                        (ခန့်မှန်းကြာချိန် ၆လ)</h6>
+                                </div>
+                                <div class="item py-4 px-2">
+                                    <h6 class="text-center fw-normal">Senior Memberများနှင့် တစ်နှစ်ခွဲကြာ လက်တွေ့ပရောဂျက်များတွင် ပါဝင်ခြင်းအားဖြင့်  အတွေ့အကြုံကို ဆန်းစစ်ပါ၊ ဂျပန်သို့ လာရန်စာရွက်စာတမ်းများ ပြင်ဆင်ခြင်း။
+                                        (ခန့်မှန်းကြာချိန် ၆လ)</h6>
+                                </div>
+                                <div class="item py-4 px-2">
+                                    <h6 class="text-center fw-normal">မိမိရဲ့ကြိုးစားအားထုတ်မှုအရ တစ်နှစ်အကြာတွင်၊ သင်သည် ဂျပန်နိုင်ငံရှိ BS ရုံးချုပ်တွင် အချိန်ပြည့်ဝန်ထမ်းတစ်ဦးအဖြစ် လုပ်ကိုင်မည်ဖြစ်သည်။</h6>
+                                </div>
+                            </div>
+                            <h5 class="" style="writing-mode:vertical-rl;">Let Us Guide Your IT Career Lifte by working together!</h5>
+                        </div>
+                    </article>
+                    <article class="right text-center">
+                        <h4 class="text-center mb-4">ကျွန်ုပ်တို့ ကုမ္ပဏီတွင်တပတ်တာအချိန်ဇယား</h4>
+                        <img src="./images/titable.png" alt="" class="mb-3">
+                        <div class="text-white py-3 px-4 rounded-3" style="background-color: #DC5F00;">
+                            <h5>အပတ်စဉ် Butterfly Program အသိပေးချက်</h5>
+                            <p class="">ကုမ္ပဏီကSenior Memberများရဲ့ ပရောဂျတ်အနည်းအများအလိုက် Butterfly programရဲ့ 
+                                နောက်ထပ်အပတ်စဉ်များဖွင့်လှစ်မည့် Scheduleများအပြောင်းအလဲရှိနိုင်ပါသည်။
+                                နောက်ဆုံး သတင်းအချက်အလက်များကို ကုမ္ပဏီရဲ့ official pageတွင် 
+                                စောင့်ကြည့်စစ်ဆေးခြင်း၊ စုံစမ်းမေးရန်Formမှတဆင့်လည်းဆက်သွယ် မေးမြန်းနိုင်ပါသည်။ </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="intro">
+            <div class="container py-5 px-2">
+                <article class="d-flex justify-content-center align-items-center gap-2">
+                    <img src="./images/butterfly.png" alt="" class="" style="width: 45px;">
+                    <h4 class="text-primary m-0 p-0">Butterfly Program ကိုစိတ်ဝင်စားတယ်ဆိုရင် ဘယ်လို JOIN ရမှာလဲ？</h4>
+                </article>
+                <article class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-3">
+                    <div class="item text-center px-3 py-1 shadow bg-white">
+                        <img src="./images/v one.png" alt="">
+                        <p class="">info@bliss-stock.com သို့ အီးမေလ်မှတဆင့် CV ဖောင်ပေးပို့ပါ</p>
+                    </div>
+                    <div class="item text-center px-3 py-1 shadow bg-white">
+                        <img src="./images/v two.png" alt="">
+                        <p class="">ရွေးချယ်ခံရသောသူသာ Coding Test ဖြေရပါမည်။</p>
+                    </div>
+                    <div class="item text-center px-3 py-1 shadow bg-white">
+                        <img src="./images/v three.png" alt="">
+                        <p class="">Online မှတဆင့် အင်တာဗျူးဖြေရပါမည်။</p>
+                    </div>
+                </article>
+                <article class="content mt-5 p-3 shadow-sm">
+                    <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
+                        <img src="./images/butterfly.png" alt="" class="" style="width: 35px;">
+                        <h5 class="text-primary m-0 p-0">Butterfly Program ကို ဘယ်လို JOIN ရမှာလဲ？</h5>
+                    </div>
+                    <p class="">
+                        Butterfly Program ကို စိတ်ဝင်စားလို့ Joinချင်တယ်ဆိုရင် ကိုယ့်ရဲ့  CVအချက်အလက်တွေဖြည့်ထားသောဖောင်နှင့်တကွ  <span style="background-color: #FFE800;">info@bliss-stock.com</span>သို့ သတ်မှတ်ထားသော Deadline မတိုင်ခင် အီးမေလ်ပေးပို့ပေးပါ။ ရောက်ရှိလာသော CVတွေထဲကမှ Coding Test ဖြေခွင့်ရသူတွေကိုရွေးချယ်ပြီး အီးမေလ်မှတဆင့်ပြန်လှယ်ဆက်သွယ်ပေးပါမယ်။ Coding Testမှာတော့ မိမိကြိုက်နှစ်သက်ရာ Programming Languageတခုခုနှင့်ဖြေဆိုနိုင်အောင်စီစဉ်ပေးထားပါတယ်။ Online မှတဆင့်ဖြေရမှာပါ။ Coding Test ပြီးရင်တော့ လူတွေ့အင်တာဗျူးကို Onlineကနေ ဖြေဆိုရပါမယ်။ အင်တာဗျူးမယ့်ရက်ကတော့ Coding Test ဖြေပီ တပတ်ခန့်အကြာမှာ နှစ်ရက်ခွဲပြီး ပြုလုပ်မာဖစ်ပြီး နောက်ဆုံးတက်ခွင့်ရတဲ့ စာရင်းကိုတော့ လူတွေ့အင်တာဗျူးဖြေအပြီး နှစ်ရက်ခန့်အကြာမှာ ထုတ်ပြန်ပေးသွားမှာပါ
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="activities">
+            <div class="container py-5 px-2">
+                <p class="text-center">Butterfly On Job Training Program</p>
+                <h4 class="text-center text-primary">ACTIVITIES SCHEDULE</h4>
+                <div class="grid">
+                    <div class="items shadow d-flex justify-content-center align-items-center">
+                        <div class="text-center py-3 px-sm-2 px-md-5">
+                            <h6 class=""><span class="text-primary">B</span>liss Stock Company</h6>
+                            <h4 class="text-primary">Butterfly Program</h4>
+                            <h6 class="">ACTIVITIES</h6>
+                        </div>
+                    </div>
+                    <div class="items shadow py-3 px-1 px-md-2 bg-primary text-white">
+                        <h5 class="text-center">1st STEP</h5>
+                        <ul class="">
+                            <li>CV submit deadline</li>
+                            <li>Coding Test</li>
+                            <li>Interview</li>
+                        </ul>
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">01.</div>
+                        <img src="./images/1-1.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">02.</div>
+                        <img src="./images/1-2.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">03.</div>
+                        <img src="./images/1-3.png" alt="" class="">
+                    </div>
+                    <div class="items shadow py-3 px-1 px-md-2 bg-primary text-white">
+                        <h5 class="text-center">2nd STEP</h5>
+                        <ul class="">
+                            <li>Join Real Job</li>
+                            <li>Understanding Test Specification</li>
+                            <li>Creating Test pattern</li>
+                            <li>Writing your own test specification</li>
+                        </ul>
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">01.</div>
+                        <img src="./images/2-1.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">02.</div>
+                        <img src="./images/2-2.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">03.</div>
+                        <img src="./images/2-3.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">04.</div>
+                        <img src="./images/2-4.png" alt="" class="">
+                    </div>
+                    <div class="items shadow py-3 px-1 px-md-2 bg-primary text-white">
+                        <h5 class="text-center">1st STEP</h5>
+                        <ul class="">
+                            <li>Studying Business Manner</li>
+                            <li>Experiencing in work breakdown</li>
+                            <li>Learning useful tools for productivity</li>
+                            <li>Participating in real project </li>
+                        </ul>
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">01.</div>
+                        <img src="./images/3-1.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">02.</div>
+                        <img src="./images/3-2.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">03.</div>
+                        <img src="./images/3-3.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">04.</div>
+                        <img src="./images/3-4.png" alt="" class="">
+                    </div>
+                    <div class="items shadow py-3 px-1 px-md-2 bg-primary text-white">
+                        <h5 class="text-center">4th STEP</h5>
+                        <ul class="">
+                            <li>Practicing on environment Config</li>
+                            <li>Creating Combine Testing</li>
+                            <li>Processing on combine Testing</li>
+                            <li>OJT final performance presentation</li>
+                        </ul>
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">01.</div>
+                        <img src="./images/4-1.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">02.</div>
+                        <img src="./images/4-2.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">03.</div>
+                        <img src="./images/4-3.png" alt="" class="">
+                    </div>
+                    <div class="items shadow">
+                        <div class="no">04.</div>
+                        <img src="./images/4-4.png" alt="" class="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="members">
+            <div class="container py-5 px-2">
+                <article class="text-center mb-4">
+                    <span class=""> <span class="text-primary fw-bold" style="font-size: 30px;">Messages </span> from OJT members</span> <br>
+                    <span class="">in <span class="text-primary fw-bold" style="font-size: 30px;"> Butterfly Program</span></span>
+                </article>
+                <article class="grid">
+                    <div class="bg-white img-container shadow px-3 py-2 d-flex justify-content-center align-items-center" style="border-radius: 20px;">
+                        <div class=" text-center">
+                            <p class=""> OJT member's 
+                                from Butterfly program </p>
+                            <h4 class="text-primary">私達のメッセージ</h4>
+                        </div>
+                    </div>
+                    <div class="img-container shadow">
+                        
+                    </div>
+                    <div class="img-container shadow">
+                        
+                    </div>
+                    <div class="img-container shadow">
+                        
+                    </div>
+                    <div class="img-container shadow">
+                        
+                    </div>
+                    <div class="img-container shadow">
+                        
+                    </div>
+                    <div class="img-container shadow">
+                        
+                    </div>
+                    <div class="img-container shadow">
+                        
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <section class="slider">
+            <div class="container px-2 py-5">
+                <h4 class="text-center mb-5"><span class="text-primary">Butterfly Program </span> OJT Batch 1 မှ သင်တန်းသားများရဲ့ စကားသံ</h4>
+                <article class="owl-carousel owl-theme">
+                    <div class="item text-start" style="width: 300px;">
+                        <div class="p-3 bg-primary content text-white">" အရမ်းကောင်းတဲ့ OJT ပါ Knowledge တေလည်းအရမ်းရပါတယ် "</div>
+                        <img src="./images/profile.png" alt="" style="width: 60px;" class="">
+                        <h6 class="fw-bold mt-2">Shin Thant Oo</h6>
+                    </div>
+                    <div class="item text-start" style="width: 300px;">
+                        <div class="p-3 bg-primary content text-white">" အရမ်းကောင်းတဲ့ OJT ပါ Knowledge တေလည်းအရမ်းရပါတယ် "</div>
+                        <img src="./images/profile.png" alt="" style="width: 60px;" class="">
+                        <h6 class="fw-bold mt-2">Shin Thant Oo</h6>
+                    </div>
+                    <div class="item text-start" style="width: 300px;">
+                        <div class="p-3 bg-primary content text-white">" အရမ်းကောင်းတဲ့ OJT ပါ Knowledge တေလည်းအရမ်းရပါတယ် "</div>
+                        <img src="./images/profile.png" alt="" style="width: 60px;" class="">
+                        <h6 class="fw-bold mt-2">Shin Thant Oo</h6>
+                    </div>
+                    <div class="item text-start" style="width: 300px;">
+                        <div class="p-3 bg-primary content text-white">" အရမ်းကောင်းတဲ့ OJT ပါ Knowledge တေလည်းအရမ်းရပါတယ် "</div>
+                        <img src="./images/profile.png" alt="" style="width: 60px;" class="">
+                        <h6 class="fw-bold mt-2">Shin Thant Oo</h6>
+                    </div>
+                    <div class="item text-start" style="width: 300px;">
+                        <div class="p-3 bg-primary content text-white">" အရမ်းကောင်းတဲ့ OJT ပါ Knowledge တေလည်းအရမ်းရပါတယ် "</div>
+                        <img src="./images/profile.png" alt="" style="width: 60px;" class="">
+                        <h6 class="fw-bold mt-2">Shin Thant Oo</h6>
+                    </div>
+                    <div class="item text-start" style="width: 300px;">
+                        <div class="p-3 bg-primary content text-white">" အရမ်းကောင်းတဲ့ OJT ပါ Knowledge တေလည်းအရမ်းရပါတယ် "</div>
+                        <img src="./images/profile.png" alt="" style="width: 60px;" class="">
+                        <h6 class="fw-bold mt-2">Shin Thant Oo</h6>
+                    </div>
+                    <div class="item text-start" style="width: 300px;">
+                        <div class="p-3 bg-primary content text-white">" အရမ်းကောင်းတဲ့ OJT ပါ Knowledge တေလည်းအရမ်းရပါတယ် "</div>
+                        <img src="./images/profile.png" alt="" style="width: 60px;" class="">
+                        <h6 class="fw-bold mt-2">Shin Thant Oo</h6>
+                    </div>
+                    <div class="item text-start" style="width: 300px;">
+                        <div class="p-3 bg-primary content text-white">" အရမ်းကောင်းတဲ့ OJT ပါ Knowledge တေလည်းအရမ်းရပါတယ် "</div>
+                        <img src="./images/profile.png" alt="" style="width: 60px;" class="">
+                        <h6 class="fw-bold mt-2">Shin Thant Oo</h6>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="container pt-5 px-2">
+                <div class="d-flex justify-content-between align-items-start gap-4 flex-wrap">
+                    <article class="">
+                        <h5 class="">ဆက်သွယ်ရန်အချက်အလက်</h5>
+                        <p class="m-0 p-0">2-62-10, Toshima Ku, Higashi Ikebukuro,</p>
+                        <p class="">Ikebukuro 5th building 601, Tokyo, Japan（TAMA WOODY GATE IKEBUKURO）</p>
+                        <p class="">Tel: +81 03-6873-6772 Fax: +81 03-6873-6772</p>
+                        <div class="d-flex justify-content-start align-items-center gap-2">
+                            <a href="https://www.facebook.com/Bliss-Stock-1472291469574908/" class="">
+                                <img src="./images/facebook.svg" alt="" class="">
+                            </a>
+                            <a href="https://www.linkedin.com/in/bliss-stock-67a956126" class="">
+                                <img src="./images/linkedin.svg" alt="" class="">
+                            </a>
+                            <a href="https://twitter.com/bliss_stock" class="">
+                                <img src="./images/twitter.svg" alt="" class="">
+                            </a>
+                        </div>
+                    </article>
+                    <article class="">
+                        <h5 class="">မြန်မာဆောင်းပါးများ</h5>
+                        <a href="https://bliss-stock.co.jp/my/mmnews/2020/12/" class="">ဒီဇင်ဘာ 2020</a>
+                        <h5 class="mt-3">ဂျပန်ဆောင်းပါးများ</h5>
+                        <a href="https://bliss-stock.co.jp/my/2021/07/" class="">ဇူလိုင် 2021</a><br>
+                        <a href="https://bliss-stock.co.jp/my/jpnews/2020/12/" class="">ဒီဇင်ဘာ 2020</a>
+                    </article>
+                    <article class="">
+                        <h5 class="">အမျိုးအစား</h5>
+                        <a href="https://bliss-stock.co.jp/my/category/%E6%97%A5%E6%9C%AC%E3%81%A7%E3%81%AE%E4%BB%95%E4%BA%8B/" class="">ဂျပန်နှင့်ပတ်သက်သော လုပ်ငန်းခွင်</a><br>
+                        <a href="https://bliss-stock.co.jp/my/category/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%B0%86%E8%BB%8D/" class="">ဂျပန်နှင့်ပတ်သက်သော အထွေထွေ</a>
+                    </article>
+                </div>
+            </div>
+            <img src="./images/footer.png" alt="" class="w-100">
+        </section>
+        <section class="footer">
+            <div class="container py-3">
+                <h6 class="text-center m-0 p-0"><a href="https://bliss-stock.co.jp/my/category/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%B0%86%E8%BB%8D/" class="text-white">
+                    <img src="./images/copyright.svg" alt="" class="d-inline text-info me-1">copyright Bliss Stock. All Rights Reserved</a></h6>
+            </div>
+        </section>
+    </section>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-80px";
+        }
+        prevScrollpos = currentScrollPos;
+
+        if(window.scrollY > 800){
+          document.getElementById("scroll-up").classList.remove('d-none');
+        }else{
+          document.getElementById("scroll-up").classList.add('d-none');
+        }
+      }
+      
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        
+            margin:10,
+            responsiveClass:true,
+            dots: false,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            loop:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                768:{
+                items: 2,
+                nav: true
+                },
+                992:{
+                    items:3,
+                    nav:true,
+                },
+                1500:{
+                items: 4,
+                nav: true,
+                }
+            }
+        })
+      });
+
+</script>
+</html>
